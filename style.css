@@ -288,12 +288,33 @@ nav.scrolled {
 }
 
 /* ==================== PAGE 1 - HERO ==================== */
+/* ==================== PAGE 1 - HERO ==================== */
 #page1 {
     min-height: 100vh;
     width: 100%;
     position: relative;
     padding: 0 60px;
     background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-video-wrapper {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+#hero-video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #page1 video {
